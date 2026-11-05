@@ -1,0 +1,123 @@
+/* Flor de Casa — estilos da landing page */
+:root {
+  --green: #254b3b;
+  --green-dark: #19372b;
+  --green-soft: #e8eee7;
+  --cream: #f8f6ef;
+  --sand: #eee9dc;
+  --text: #26352d;
+  --muted: #68756d;
+  --white: #fff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(--cream); line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+.container { width: min(1120px, 88%); margin: 0 auto; }
+.header { background: rgba(248,246,239,.96); position: sticky; top: 0; z-index: 10; border-bottom: 1px solid #e9e5da; }
+.navbar { min-height: 76px; display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+.logo { font-family: 'Playfair Display', serif; font-size: 1.55rem; font-weight: 700; color: var(--green); }
+.logo span { color: #a0ad73; margin-right: 5px; }
+.nav-links { display: flex; align-items: center; gap: 30px; font-size: .9rem; color: #536157; }
+.nav-links a:hover, .text-link:hover { color: #82945e; }
+.nav-contact { border: 1px solid #9ba990; padding: 10px 18px; border-radius: 30px; }
+.hero { background: var(--green-soft); overflow: hidden; }
+.hero-content { min-height: 570px; display: flex; align-items: center; justify-content: space-between; gap: 45px; padding-top: 65px; padding-bottom: 65px; }
+.hero-text { flex: 1 1 52%; max-width: 570px; }
+.eyebrow, .section-label { color: #82945e; letter-spacing: .14em; font-size: .72rem; font-weight: 700; }
+h1, h2 { font-family: 'Playfair Display', serif; font-weight: 600; line-height: 1.13; color: var(--green-dark); }
+h1 { font-size: clamp(2.7rem, 5vw, 4.5rem); margin: 18px 0; }
+h1 em { color: #81945e; font-weight: 600; }
+.hero-text > p { max-width: 480px; color: var(--muted); font-size: 1.08rem; }
+.hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 22px; margin-top: 30px; }
+.button { display: inline-flex; justify-content: center; align-items: center; border: 0; border-radius: 30px; padding: 14px 23px; font: inherit; font-weight: 700; cursor: pointer; transition: .2s; }
+.button-primary { background: var(--green); color: white; }
+.button-primary:hover { background: #37634e; transform: translateY(-2px); }
+.text-link { color: var(--green); font-size: .9rem; font-weight: 700; }
+.hero-note { margin-top: 42px; color: #78866d; font-size: .85rem; }
+.hero-note span { margin-right: 8px; }
+.hero-art { flex: 0 1 430px; height: 390px; position: relative; border-radius: 48% 48% 12px 12px; background: #d9e2d2; display: flex; align-items: end; justify-content: center; overflow: hidden; }
+.sun { position: absolute; width: 175px; height: 175px; border-radius: 50%; background: #e8d8a9; top: 35px; right: 55px; }
+.plant { position: absolute; bottom: 0; width: 150px; height: 270px; }
+.plant-one { left: 75px; transform: scale(1.05); }
+.plant-two { right: 55px; transform: scale(.75); }
+.pot { position: absolute; bottom: 0; left: 25px; width: 100px; height: 90px; background: #b77d5b; border-radius: 8px 8px 35px 35px; box-shadow: inset -10px 0 rgba(0,0,0,.06); }
+.leaf { position: absolute; bottom: 75px; left: 72px; width: 43px; height: 105px; background: #587b55; border-radius: 100% 0 100% 0; transform-origin: bottom center; }
+.leaf.l1 { transform: rotate(-48deg); }
+.leaf.l2 { transform: rotate(40deg) scale(.9); background: #789765; }
+.leaf.l3 { transform: rotate(-12deg) scale(.85); bottom: 105px; background: #456c4a; }
+.leaf.l4 { transform: rotate(68deg) scale(.7); bottom: 90px; background: #8ba477; }
+.plant-two .pot { background: #d0a27d; }
+.plant-two .leaf { background: #789765; height: 115px; }
+.art-caption { position: absolute; bottom: 22px; right: 20px; color: rgba(37,75,59,.75); font-family: 'Playfair Display', serif; font-style: italic; font-size: .9rem; }
+.section { padding: 95px 0; }
+.about-grid { display: flex; gap: 80px; align-items: flex-start; margin-top: 24px; }
+.about-grid h2, .benefit-intro h2 { flex: 1; font-size: clamp(2rem, 3.5vw, 3.1rem); max-width: 470px; }
+.about-grid > div { flex: 1; max-width: 530px; }
+.section-copy { color: var(--muted); margin-bottom: 15px; }
+.services { background: #fff; }
+.section-heading { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin: 22px 0 35px; }
+.section-heading h2 { max-width: 570px; font-size: clamp(2rem, 3.5vw, 3rem); }
+.section-heading p { max-width: 310px; color: var(--muted); }
+.service-cards { display: flex; gap: 22px; }
+.card { flex: 1; background: var(--cream); border: 1px solid #eeeade; border-radius: 14px; padding: 30px 26px; }
+.card-icon { width: 54px; height: 54px; display: grid; place-items: center; background: #e8eee2; border-radius: 50%; font-size: 1.5rem; margin-bottom: 23px; }
+.card h3, .benefit h3 { color: var(--green); font-size: 1.08rem; margin-bottom: 9px; }
+.card p, .benefit p { color: var(--muted); font-size: .93rem; }
+.benefits { display: flex; gap: 90px; align-items: center; }
+.benefit-intro { flex: 1; }
+.benefit-intro h2 { margin: 20px 0; }
+.benefit-intro > p { color: var(--muted); max-width: 360px; }
+.benefit-list { flex: 1; display: flex; flex-direction: column; gap: 26px; }
+.benefit { display: flex; gap: 17px; }
+.benefit > span { flex: 0 0 34px; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: #e2eadc; color: var(--green); font-weight: 700; }
+.testimonials { background: #e8eee7; }
+.quote-cards { display: flex; gap: 20px; }
+.quote-cards blockquote { flex: 1; background: rgba(255,255,255,.75); padding: 26px; border-radius: 12px; color: #4e5d52; font-family: 'Playfair Display', serif; font-size: 1.08rem; }
+.quote-cards cite { display: block; margin-top: 20px; color: #82945e; font-family: 'DM Sans', sans-serif; font-size: .82rem; font-style: normal; font-weight: 700; }
+.demo-note { color: #7b887d; font-size: .75rem; margin-top: 16px; }
+.contact { background: var(--green-dark); color: white; }
+.contact-grid { display: flex; justify-content: space-between; gap: 70px; align-items: flex-start; }
+.contact-text { flex: 1; max-width: 440px; }
+.contact-text h2 { color: white; font-size: clamp(2.2rem, 4vw, 3.3rem); margin: 20px 0; }
+.contact-text > p { color: #c5d1c8; margin-bottom: 30px; }
+.contact-detail { color: #d5dfd7; margin-top: 13px; font-size: .92rem; }
+.contact-detail span { color: #b7c99b; margin-right: 10px; }
+.contact-form { flex: 1; max-width: 490px; background: white; color: var(--text); padding: 32px; border-radius: 14px; display: flex; flex-direction: column; }
+.contact-form label { font-size: .84rem; font-weight: 700; margin: 12px 0 6px; }
+.contact-form input, .contact-form select, .contact-form textarea { width: 100%; padding: 12px 13px; border: 1px solid #dce2d9; border-radius: 7px; background: #fbfcfa; font: inherit; color: var(--text); }
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { outline: 2px solid #a8b997; border-color: transparent; }
+.contact-form textarea { resize: vertical; }
+.contact-form button { margin-top: 20px; }
+.contact-form small { color: #89938b; font-size: .72rem; margin-top: 12px; }
+.footer { background: #142c22; color: #c5d1c8; padding: 30px 0; }
+.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.footer .logo { color: white; }
+.footer p, .footer small { font-size: .8rem; }
+
+/* Ajustes para tablets e celulares */
+@media (max-width: 800px) {
+  .nav-links { gap: 15px; }
+  .hero-content { gap: 25px; }
+  .hero-art { flex-basis: 330px; height: 340px; }
+  .about-grid, .benefits { gap: 40px; }
+  .contact-grid { gap: 35px; }
+}
+@media (max-width: 650px) {
+  .container { width: min(100% - 36px, 520px); }
+  .navbar { padding: 15px 0; align-items: flex-start; flex-direction: column; gap: 12px; }
+  .nav-links { width: 100%; flex-wrap: wrap; gap: 10px 18px; font-size: .82rem; }
+  .nav-contact { padding: 6px 12px; }
+  .hero-content { flex-direction: column; align-items: stretch; padding-top: 58px; }
+  .hero-art { width: 100%; flex-basis: auto; height: 300px; }
+  .hero-actions { align-items: flex-start; flex-direction: column; gap: 16px; }
+  .section { padding: 68px 0; }
+  .about-grid, .section-heading, .benefits, .contact-grid { flex-direction: column; gap: 25px; }
+  .service-cards, .quote-cards { flex-direction: column; }
+  .card { padding: 25px; }
+  .section-heading { align-items: flex-start; }
+  .benefit-list { width: 100%; }
+  .contact-form { width: 100%; padding: 24px; }
+  .footer-inner { flex-direction: column; align-items: flex-start; }
+}
