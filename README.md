@@ -1,5 +1,4 @@
-# Flor de Casa — Landing Page
-
+# Flor de Casa 
 Projeto acadêmico fictício de uma landing page para uma pequena empresa de plantas e jardinagem.
 
 ## Arquivos
@@ -7,7 +6,7 @@ Projeto acadêmico fictício de uma landing page para uma pequena empresa de pla
 - `style.css`: identidade visual, Flexbox e regras de responsividade.
 
 ## Como visualizar
-Abra o arquivo `index.html` em um navegador. Não é necessário instalar ferramentas ou dependências.
+Acesse: [Flor de Casa](http://flor-de-casa.netlify.app)
 
 ## Recursos utilizados
 - HTML5 semântico
