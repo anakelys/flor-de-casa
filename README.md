@@ -1,6 +1,6 @@
-# Flor de Casa — Landing Page
-
+# Flor de Casa
 Projeto acadêmico fictício de uma landing page para uma pequena empresa de plantas e jardinagem.
+Acesse: [Flor de Casa](http://flor-de-casa.netlify.app)
 
 ## Arquivos
 - `index.html`: estrutura e conteúdo da página.
